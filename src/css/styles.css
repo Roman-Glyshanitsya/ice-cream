@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+
 /* Common styles */
 @import url('./base/reset.css');
 @import url('./base/common.css');
@@ -12,3 +13,4 @@
 
 /* Sections style */
 @import url('./layout/header.css');
+@import url('./layout/hero.css');

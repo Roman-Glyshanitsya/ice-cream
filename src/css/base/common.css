@@ -7,4 +7,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* cursor: url('/img/icons/сursor.svg') 24 24, auto; */
+
+  --animation: 350ms linear;
 }
+
+/* a:hover,
+button:hover {
+  cursor: url('/img/icons/сursor.svg') 24 24, auto;
+} */

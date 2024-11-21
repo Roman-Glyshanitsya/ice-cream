@@ -1,0 +1,108 @@
+.hero {
+    position: relative;
+    height: 502px;
+    background-color: #84A178;
+    padding-top: 99px;
+}
+
+.hero__title {
+    width: 247px;
+    color: #FCFCFC;
+    font-family: "Seymour One";
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.hero__title--sized {
+    font-size: 34px;
+    line-height: 96.5%;
+}
+
+
+.hero__links__thumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero__products__link {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 8px;
+    border: 2px solid #F8D24E;
+    padding: 11px 26px;
+
+    transition: border var(--animation);
+}
+
+.hero__products__link:hover {
+    border: 2px solid #0A8817;
+}
+
+.hero__how-made__link {
+    color: #F8D24E;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+
+    transition: color var(--animation);
+}
+
+.hero__how-made__link:hover {
+    color: #0A8817;
+}
+
+.hero__how-made__link:focus {
+    color: #FCFCFC;
+}
+
+.hero__how-made__link:disabled {
+    color: #ABABAB;
+}
+
+
+.hero__main__img {
+    position: absolute;
+    bottom: 0;
+    left: 83px;
+    z-index: 1;
+    width: 177px;
+    height: 217px;
+}
+
+.hero__dots__img {
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+}
+
+
+/* WIDTH 480 */
+@media screen and (min-width: 480px) {
+    .hero {
+        height: 415px;
+        padding-top: 99px;
+    }
+
+    .hero__main__img {
+        left: 242px;
+        width: 218px;
+        height: 267px;
+    }
+
+    .hero__dots__img {
+        left: 150px;
+    }
+}
