@@ -12,12 +12,12 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-BvUYsod9.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DLCiWxtD.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <a href="" class="header__logo">
+    <a href="/index.html" class="header__logo__link">
       <svg class="header__logo__icon">
         <use href="/ice-cream/assets/sprite-COMzie0Z.svg#icon-logo"></use>
       </svg>
@@ -38,22 +38,58 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="header__burger__button">
-      <svg class="header__burger__button__icon">
-        <use href="/ice-cream/assets/sprite-COMzie0Z.svg#icon-burger-btn"></use>
-      </svg>
-    </button>
-    <button type="button" class="header__button">
-      Buy now
-      <svg class="header__button__icon">
-        <use href="/ice-cream/assets/sprite-COMzie0Z.svg#icon-arrow-right-bold"></use>
-      </svg>
-    </button>
+    <div class="header__tablet__buttons__thumb">
+      <button type="button" class="header__burger__button">
+        <svg class="header__burger__button__icon">
+          <use href="/ice-cream/assets/sprite-COMzie0Z.svg#icon-burger-btn"></use>
+        </svg>
+      </button>
+      <button type="button" class="header__button">
+        Buy now
+        <svg class="header__button__icon">
+          <use href="/ice-cream/assets/sprite-COMzie0Z.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
 
-    <main></main>
+    <main>
+      <section class="hero">
+  <div class="container">
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title--sized">passion</span>
+    </h1>
+    <div class="hero__links__thumb">
+      <a href="#" class="hero__products__link">Products</a>
+      <a href="#" class="hero__how-made__link">How it’s made?</a>
+    </div>
+    <picture>
+      <source
+        srcset="/ice-cream/assets/hero-main-desktop-C0gy93Su.png 1x, /ice-cream/assets/hero-main-desktop@2x-C3sBysbr.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/ice-cream/assets/hero-main-tablet-Bb3PbcQ8.png 1x, /ice-cream/assets/hero-main-tablet@2x-CQ8tSC6T.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/ice-cream/assets/hero-main-mobile-B571M0Q1.png 1x, /ice-cream/assets/hero-main-mobile@2x-Bg633zfA.png 2x"
+        media="(max-width: 767px)"
+      />
+      <img class="hero__main__img" src="#" alt="ice cream" />
+    </picture>
+    <picture>
+      <source srcset="/ice-cream/assets/dots-desktop-DYFcIyJE.png" media="(min-width: 1200px)" />
+      <source srcset="/ice-cream/assets/dots-tablet-_dQkpfEb.png" media="(min-width: 768px)" />
+      <source srcset="/ice-cream/assets/dots-mobile-CXjfBsow.png" media="(max-width: 767px)" />
+      <img class="hero__dots__img" src="#" alt="ice cream" />
+    </picture>
+  </div>
+</section>
+
+    </main>
 
     
 
