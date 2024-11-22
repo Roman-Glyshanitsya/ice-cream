@@ -27,6 +27,8 @@
 
 
 .hero__links__thumb {
+    position: relative;
+    z-index: 10;
     display: flex;
     align-items: center;
     gap: 12px;
