@@ -78,6 +78,25 @@
         padding: 12px 36px;
         border-radius: 10px;
         background-color: #F8D24E;
+        transition: all var(--animation);
+    }
+
+    .header__button:hover,
+    .header__button:focus {
+        background-color: #0A8817;
+    }
+
+    .header__button:focus {
+        color: #FFF;
+    }
+
+    .header__button:focus .header__button__icon {
+        fill: #FFF;
+
+    }
+
+    .header__button:disabled {
+        background-color: #ABABAB;
     }
 
     .header__button__icon {
