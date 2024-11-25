@@ -51,6 +51,11 @@
     border: 2px solid #0A8817;
 }
 
+.hero__products__link:focus {
+    color: #FCFCFC;
+    border: 2px solid #0A8817;
+}
+
 .hero__how-made__link {
     color: #F8D24E;
     text-align: center;
