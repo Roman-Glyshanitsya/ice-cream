@@ -1,0 +1,148 @@
+.reviews {
+    padding-bottom: 413px;
+    background-image: url('/img/products/products-bcg-mobile.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: rgba(255, 255, 255, 0.00);
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .reviews {
+        background-image: url('/img/products/products-bcg-mobile@2x.png');
+    }
+}
+
+.reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__bcg__image {
+    position: relative;
+    top: -32px;
+    width: 280px;
+    height: 130px;
+    border-radius: 8px;
+    margin-bottom: 48px;
+}
+
+.reviews__user__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+}
+
+.reviews__text {
+    width: 280px;
+    height: 256px;
+    color: #FCFCFC;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 255%;
+
+    border-radius: 10px;
+    background-color: #84A178;
+
+    padding: 35px 44px;
+    margin-bottom: 32px;
+}
+
+.reviews__location {
+    color: #131313;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 186%;
+}
+
+/* WIDTH 480 */
+@media screen and (min-width: 480px) {
+    .reviews__bcg__image {
+        width: 440px;
+        height: 204px;
+    }
+}
+
+/* WIDTH 768 */
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding-bottom: 379px;
+        background-image: url('/img/products/products-bcg-tablet.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url('/img/products/products-bcg-tablet@2x.png');
+        }
+    }
+
+    .reviews__bcg__image {
+        width: 704px;
+        height: 327px;
+        top: -144px;
+        border-radius: 18px;
+        margin-bottom: -44px;
+    }
+
+    .reviews__text {
+        width: 705px;
+        height: 138px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 186%;
+        letter-spacing: 0.56px;
+
+        border-radius: 24px;
+
+        padding: 28px 80px;
+    }
+
+    .reviews__location {
+        font-size: 16px;
+    }
+}
+
+/* WIDTH 1200 */
+@media screen and (min-width: 1200px) {
+    .reviews {
+        padding-bottom: 228px;
+        background-image: url('/img/products/products-bcg-desktop.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .reviews {
+            background-image: url('/img/products/products-bcg-desktop@2x.png');
+        }
+    }
+
+    .reviews__bcg__image {
+        top: -100px;
+        width: 1013px;
+        height: 422px;
+        border-radius: 24px;
+        margin-bottom: 40px;
+    }
+
+    .reviews__text {
+        width: 968px;
+        height: 138px;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+
+        padding: 43px 109px;
+    }
+}
