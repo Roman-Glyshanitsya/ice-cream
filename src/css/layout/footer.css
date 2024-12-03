@@ -1,0 +1,81 @@
+.footer {
+    height: 1487px;
+    background-color: #84A178;
+}
+
+.container {}
+
+.footer__list {}
+
+.footer__item {
+    width: 100%;
+    border-radius: 24px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+    padding: 40px 32px 24px;
+}
+
+.footer__item__title {
+    display: inline-block;
+    color: #131313;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    background-color: #F8D24E;
+    padding: 4px 22px;
+    margin-bottom: 24px;
+}
+
+.footer__item__city {
+    color: #131313;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.48px;
+    margin-bottom: 8px;
+}
+
+.footer__item__address {
+    width: 190px;
+    color: #D6936D;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.48px;
+    margin-bottom: 24px;
+}
+
+.footer__item__schedule__list {
+    padding: 24px 0;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px;
+}
+
+.footer__item__schedule___item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer__item__schedule__date {
+    color: #131313;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 186%;
+}
+
+.footer__item__schedule__time {
+    color: #ABABAB;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 186%;
+}
+
+.footer__item__contacts {
+    color: #131313;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+}

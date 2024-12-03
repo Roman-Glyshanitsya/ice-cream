@@ -99,7 +99,7 @@
 
 .products__card-link:hover .products__card-icon,
 .products__card-link:focus .products__card-icon {
-    fill: #F8D24E;
+    fill: #0A8817;
     transform: scale(1.3);
 }
 

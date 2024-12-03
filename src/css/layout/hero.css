@@ -129,6 +129,7 @@
     }
 
     .hero__title {
+        font-size: 38px;
         margin-bottom: 24px;
     }
 
@@ -221,6 +222,11 @@
         font-size: 38px;
         letter-spacing: 1.52px;
         margin-bottom: 28px;
+    }
+
+    .hero__title--sized {
+        font-size: 38px;
+
     }
 
     .hero__links__thumb {
