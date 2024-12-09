@@ -1,12 +1,12 @@
 .footer {
-    position: relative;
     height: 1487px;
     background-color: #84A178;
+    padding-bottom: 122px;
 }
 
 .footer .container {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: -353px;
 }
 
@@ -20,6 +20,7 @@
 
 .footer__item {
     width: 280px;
+    height: 412px;
     border-radius: 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
@@ -102,6 +103,7 @@
 .footer__button {
     width: 196px;
     height: 42px;
+    font-family: "Montserrat", sans-serif;
     color: #131313;
     text-align: center;
     font-size: 14px;
@@ -233,7 +235,7 @@
 .footer__copyrights__thumb {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -122px;
     width: 100%;
     background-color: #84A178;
     border-top: 1px solid #E1E1E1;
@@ -252,6 +254,7 @@
 @media screen and (min-width: 768px) {
     .footer {
         height: 625px;
+        padding-bottom: 82px;
     }
 
     .footer .container {
@@ -266,6 +269,7 @@
 
     .footer__item {
         width: 224px;
+        height: 537px;
         padding: 40px 24px;
     }
 
@@ -318,7 +322,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 82px;
     }
 
     .footer__social__contacts__thumb {
@@ -352,6 +355,7 @@
     .footer__copyrights__thumb {
         display: flex;
         justify-content: center;
+        bottom: -82px;
         gap: 3px;
         padding: 12px 0;
     }
@@ -364,65 +368,81 @@
 
 /* WIDTH 1200 */
 @media screen and (min-width: 1200px) {
-    .footer {}
+    .footer {
+        height: 862px;
+        padding-bottom: 104px;
+    }
 
-    .container {}
+    .footer .container {
+        top: -128px;
+    }
 
-    .footer__list {}
+    .footer__list {
+        margin-bottom: 60px;
+        gap: 32px;
+    }
 
-    .footer__item {}
+    .footer__item {
+        width: 368px;
+        height: 542px;
+    }
 
-    .footer__item__title {}
+    .footer__item__city {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+        margin-bottom: 8px;
+    }
 
-    .footer__item__city {}
+    .footer__item__address {
+        width: 288px;
+        font-size: 16px;
+        letter-spacing: 0.64px;
+    }
 
-    .footer__item__address {}
+    .footer__item__schedule___item:not(:last-child) {
+        margin-bottom: 12px;
+    }
 
-    .footer__item__schedule__list {}
+    .footer__item__schedule__date {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+    }
 
-    .footer__item__schedule___item {}
+    .footer__item__schedule__time {
+        font-size: 16px;
+    }
 
-    .footer__item__schedule__date {}
+    .footer__item__contacts {
+        display: block;
+        font-style: 16px;
+    }
 
-    .footer__item__schedule__time {}
+    .footer__button__thumb {
+        margin-bottom: 120px;
+    }
 
-    .footer__item__contacts {}
+    .footer__subtitle {
+        width: 520px;
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        margin-bottom: 14px;
+    }
 
-    .footer__button__thumb {}
+    .footer__subtitle--sized {
+        width: 500px;
+        font-size: 58px;
+        letter-spacing: 3.48px;
+    }
 
-    .footer__button {}
+    .footer__social-contacts__list {
+        margin-bottom: 40px;
+    }
 
-    .footer__button__location {}
+    .footer__phone-contact {
+        font-size: 16px;
+    }
 
-    .footer__button__icon {}
-
-    .footer__button__franchise {}
-
-    .footer__contacts__thumb {}
-
-    .footer__subtitle {}
-
-    .footer__subtitle--sized {}
-
-    .footer__social__contacts__thumb {}
-
-    .footer__social-contacts__list {}
-
-    .footer__social-contacts__item {}
-
-    .footer__social-contacts__link {}
-
-    .footer__social-contacts__icon {}
-
-    .icon-fill {}
-
-    .icon-stroke {}
-
-    .footer__phone-contact {}
-
-    .footer__phone {}
-
-    .footer__copyrights__thumb {}
-
-    .footer__copyrights {}
+    .footer__copyrights__thumb {
+        bottom: -104px;
+    }
 }
