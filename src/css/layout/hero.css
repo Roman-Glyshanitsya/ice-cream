@@ -129,7 +129,7 @@
     }
 
     .hero__title {
-        font-size: 38px;
+        font-size: 26px;
         margin-bottom: 24px;
     }
 
@@ -176,7 +176,9 @@
     }
 
     .hero__statistics__thumb {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         position: absolute;
         top: 0;
         right: 32px;
