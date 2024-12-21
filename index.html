@@ -11,8 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:opsz,wght@14..32,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DIomjCSG.css">
+    <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-BkYXlx5o.css">
   </head>
   <body>
     <header class="header">
@@ -107,7 +110,12 @@
         srcset="/ice-cream/assets/hero-main-mobile-B571M0Q1.png 1x, /ice-cream/assets/hero-main-mobile@2x-Bg633zfA.png 2x"
         media="(max-width: 767px)"
       />
-      <img class="hero__main__img" src="#" alt="ice cream" />
+      <img
+        class="hero__main__img"
+        src="#"
+        alt="ice cream"
+        data-aos="fade-left"
+      />
     </picture>
     <picture>
       <source srcset="/ice-cream/assets/dots-desktop-DYFcIyJE.png" media="(min-width: 1200px)" />
@@ -123,7 +131,7 @@
     <p class="products__subtitle">100% natural</p>
     <h2 class="products__title">products</h2>
     <ul class="products__card-list">
-      <li class="products__card-item">
+      <li class="products__card-item" data-aos="fade-up">
         <img
           srcset="/ice-cream/assets/products-ice-cream-DF_tCmcm.png 1x, /ice-cream/assets/products-ice-cream@2x-oS4S6fi4.png 2x"
           src="#"
@@ -144,7 +152,7 @@
           </svg>
         </a>
       </li>
-      <li class="products__card-item">
+      <li class="products__card-item" data-aos="fade-up">
         <img
           srcset="/ice-cream/assets/products-ice-coffee-D3iEKhWp.png 1x, /ice-cream/assets/products-ice-coffee@2x-iSnBE_8-.png 2x"
           src="#"
@@ -164,7 +172,7 @@
           </svg>
         </a>
       </li>
-      <li class="products__card-item">
+      <li class="products__card-item" data-aos="fade-up">
         <img
           srcset="/ice-cream/assets/products-milkshakes-CvVrwKIk.png 1x, /ice-cream/assets/products-milkshakes@2x-CTOfawO5.png 2x"
           src="#"
@@ -269,9 +277,9 @@
 </section>
 
       <section class="reviews">
-  <div class="container">
-    <ul class="reviews__list">
-      <li class="reviews__item">
+  <div class="swiper">
+    <ul class="reviews__list swiper-wrapper">
+      <li class="reviews__item swiper-slide">
         <img
           srcset="/ice-cream/assets/review-bcg-1-BENgHVcD.jpg 1x, /ice-cream/assets/review-bcg-1@2x-B0Sn7rgn.jpg 2x"
           src="#"
@@ -291,21 +299,15 @@
         </p>
         <p class="reviews__location">Emily, Los Angeles</p>
       </li>
-      <!-- <li class="reviews__item">
+      <li class="reviews__item swiper-slide">
         <img
-          srcset="
-            /img/reviews/review-bcg-2.jpg    1x,
-            /img/reviews/review-bcg-2@2x.jpg 2x
-          "
+          srcset="/ice-cream/assets/review-bcg-2-XhJ8LZLL.jpg 1x, /ice-cream/assets/review-bcg-2@2x-CfHfHNVK.jpg 2x"
           src="#"
           alt="ice cream"
           class="reviews__bcg__image"
         />
         <img
-          srcset="
-            /img/reviews/review-user-2.png    1x,
-            /img/reviews/review-user-2@2x.png 2x
-          "
+          srcset="/ice-cream/assets/review-user-2-BpnxpkD_.png 1x, /ice-cream/assets/review-user-2@2x-Kjsh8VCN.png 2x"
           src="#"
           alt="user"
           class="reviews__user__image"
@@ -315,22 +317,16 @@
           love your ice cream and casual atmosphere!
         </p>
         <p class="reviews__location">Bryan, New-York</p>
-      </li> -->
-      <!-- <li class="reviews__item">
+      </li>
+      <li class="reviews__item swiper-slide">
         <img
-          srcset="
-            /img/reviews/review-bcg-3.jpg    1x,
-            /img/reviews/review-bcg-3@2x.jpg 2x
-          "
+          srcset="/ice-cream/assets/review-bcg-3-YzXzPOio.jpg 1x, /ice-cream/assets/review-bcg-3@2x-CEeiafHO.jpg 2x"
           src="#"
           alt="ice cream"
           class="reviews__bcg__image"
         />
         <img
-          srcset="
-            /img/reviews/review-user-3.png    1x,
-            /img/reviews/review-user-3@2x.png 2x
-          "
+          srcset="/ice-cream/assets/review-user-3-G8jNsxh9.png 1x, /ice-cream/assets/review-user-3@2x-CPkPRwaC.png 2x"
           src="#"
           alt="user"
           class="reviews__user__image"
@@ -341,8 +337,9 @@
           quickly!
         </p>
         <p class="reviews__location">Diana, Chicago</p>
-      </li> -->
+      </li>
     </ul>
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
@@ -553,5 +550,12 @@
 </div>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        mirror: true,
+      });
+    </script>
   </body>
 </html>
