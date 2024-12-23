@@ -21,3 +21,5 @@
 
 /* Components */
 @import url('./components/mobile-menu.css');
+@import url('./components/backdrop.css');
+@import url('./components/franchise-modal.css');

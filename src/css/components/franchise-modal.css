@@ -1,0 +1,40 @@
+.franchise-modal {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 280px;
+    min-height: 674px;
+
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background: #FCFCFC;
+    padding: 28px;
+
+    transition: transform var(--animation);
+}
+
+.modal__button-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.modal__button-close__icon {}
+
+.franchise-modal__title {}
+
+.franchise-modal__text {}
+
+.franchise-modal__from {}
+
+.franchise-modal__form__input {}
+
+.franchise-modal__button {}
