@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
     <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-BHzcAAqB.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-CmxHbO0e.css">
   </head>
   <body>
     <header class="header">
@@ -224,7 +224,10 @@
             This is enough to choose ice cream and coffee for any mood!
           </p>
         </div>
-        <button class="how-made__content__button">
+        <button
+          class="how-made__content__button modal-open"
+          data-modal="read-more-modal"
+        >
           Read more
           <svg class="how-made__content__button__icon">
             <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-arrow-right-bold"></use>
@@ -426,8 +429,8 @@
         </svg>
       </button>
       <button
-        class="footer__button footer__button__franchise"
-        id="franchise-button"
+        class="footer__button footer__button__franchise modal-open"
+        data-modal="franchise-modal"
       >
         Franchise
         <svg class="footer__button__icon">
@@ -554,12 +557,12 @@
 
     <div class="backdrop is-hidden" id="franchise-modal">
   <div class="franchise-modal">
-    <button class="modal__button-close" id="franchise-close-button">
+    <button class="modal__button-close close-button" id="close-button">
       <svg class="modal__button-close__icon">
         <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
       </svg>
     </button>
-    <h2 class="franchise-modal__title">
+    <h2 class="modal__title">
       Thank you for your interest in owning an Ice Cream shop
     </h2>
     <p class="franchise-modal__text">
@@ -593,6 +596,23 @@
       ></textarea>
       <button class="franchise-modal__button" type="submit">Submit</button>
     </form>
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" id="read-more-modal">
+  <div class="read-more-modal">
+    <button class="modal__button-close close-button" id="close-button">
+      <svg class="modal__button-close__icon">
+        <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">How it’s made?</h2>
+    <div class="read-more-modal__video"></div>
+    <p class="read-more-modal__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
   </div>
 </div>
 
