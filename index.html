@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
     <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-hZyHiwj-.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-BHzcAAqB.css">
   </head>
   <body>
     <header class="header">
@@ -425,7 +425,10 @@
           <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-arrow-right-bold"></use>
         </svg>
       </button>
-      <button class="footer__button footer__button__franchise">
+      <button
+        class="footer__button footer__button__franchise"
+        id="franchise-button"
+      >
         Franchise
         <svg class="footer__button__icon">
           <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-arrow-right-bold"></use>
@@ -549,9 +552,9 @@
   </button>
 </div>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" id="franchise-modal">
   <div class="franchise-modal">
-    <button class="modal__button-close">
+    <button class="modal__button-close" id="franchise-close-button">
       <svg class="modal__button-close__icon">
         <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
       </svg>
@@ -582,7 +585,12 @@
         class="franchise-modal__form__input"
         placeholder="Email"
       />
-      <textarea name="comment" placeholder="Comment"></textarea>
+      <textarea
+        class="franchise-modal__form__textarea"
+        name="comment"
+        placeholder="Comment"
+        rows="3"
+      ></textarea>
       <button class="franchise-modal__button" type="submit">Submit</button>
     </form>
   </div>
