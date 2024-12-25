@@ -1,6 +1,6 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" id="franchise-modal">
   <div class="franchise-modal">
-    <button class="modal__button-close">
+    <button class="modal__button-close" id="franchise-close-button">
       <svg class="modal__button-close__icon">
         <use href="/img/icons/sprite.svg#icon-modal-close-btn"></use>
       </svg>
@@ -31,7 +31,12 @@
         class="franchise-modal__form__input"
         placeholder="Email"
       />
-      <textarea name="comment" placeholder="Comment"></textarea>
+      <textarea
+        class="franchise-modal__form__textarea"
+        name="comment"
+        placeholder="Comment"
+        rows="3"
+      ></textarea>
       <button class="franchise-modal__button" type="submit">Submit</button>
     </form>
   </div>

@@ -1,6 +1,6 @@
 .franchise-modal {
     position: fixed;
-    z-index: 9999;
+    z-index: 1000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -27,14 +27,67 @@
     background-color: transparent;
 }
 
-.modal__button-close__icon {}
+.modal__button-close__icon {
+    width: 20px;
+    height: 20px;
+    fill: #131313;
+}
 
-.franchise-modal__title {}
+.franchise-modal__title {
+    color: #131313;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
 
-.franchise-modal__text {}
+.franchise-modal__text {
+    color: #131313;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
 
-.franchise-modal__from {}
+.franchise-modal__from {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
 
-.franchise-modal__form__input {}
+.franchise-modal__form__input,
+.franchise-modal__form__textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #84A178;
+    background-color: rgba(248, 210, 78, 0.10);
+    padding: 8px 12px;
+}
 
-.franchise-modal__button {}
+.franchise-modal__form__input::placeholder,
+.franchise-modal__form__textarea::placeholder {
+    color: #131313;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.franchise-modal__form__textarea {
+    resize: none;
+}
+
+.franchise-modal__button {
+    color: #131313;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #F8D24E;
+    padding: 12px 34px;
+    margin-top: 12px;
+}

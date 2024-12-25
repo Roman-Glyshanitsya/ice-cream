@@ -16,3 +16,8 @@
     visibility: visible;
     pointer-events: none;
 }
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
