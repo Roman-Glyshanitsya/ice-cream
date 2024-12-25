@@ -1,0 +1,30 @@
+.read-more-modal {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 280px;
+    min-height: 459px;
+
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    background-color: #FCFCFC;
+    padding: 28px;
+
+    transition: transform var(--animation);
+}
+
+.read-more-modal__video {
+    width: 224px;
+    height: 199px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.read-more-modal__text {
+    color: #131313;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}

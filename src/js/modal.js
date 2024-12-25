@@ -1,11 +1,20 @@
-const franchiseButton = document.getElementById('franchise-button');
-const franchiseCloseButton = document.getElementById('franchise-close-button');
-const franchiseModal = document.getElementById('franchise-modal');
+const openButtons = document.querySelectorAll('[data-modal]');
+const closeButtons = document.querySelectorAll('.close-button');
 
-franchiseButton.addEventListener('click', toggleModal);
-franchiseCloseButton.addEventListener('click', toggleModal);
+function toggleModal(e) {
+  const modalName = e.target.dataset.modal;
+  const modal = document.getElementById(modalName);
 
-function toggleModal() {
-  franchiseModal.classList.toggle('is-hidden');
-  document.body.classList.toggle('no-scroll');
+  if (modal) {
+    modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-scroll');
+  }
 }
+
+openButtons.forEach(button => {
+  button.addEventListener('click', toggleModal);
+});
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', toggleModal);
+});
