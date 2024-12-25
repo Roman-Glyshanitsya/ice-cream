@@ -7,5 +7,5 @@ franchiseCloseButton.addEventListener('click', toggleModal);
 
 function toggleModal() {
   franchiseModal.classList.toggle('is-hidden');
-  document.classList.toggle('no-scroll');
+  document.body.classList.toggle('no-scroll');
 }
