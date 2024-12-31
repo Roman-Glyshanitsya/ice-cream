@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
     <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-CmxHbO0e.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DRCuWMcR.css">
   </head>
   <body>
     <header class="header">
@@ -419,7 +419,10 @@
       </li>
     </ul>
     <div class="footer__button__thumb">
-      <button class="footer__button footer__button__location">
+      <button
+        class="footer__button footer__button__location"
+        data-modal="location-modal"
+      >
         Our Locations
         <svg class="footer__button__icon">
           <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-arrow-right-bold"></use>
@@ -598,18 +601,61 @@
 
     <div class="backdrop is-hidden" id="read-more-modal">
   <div class="read-more-modal">
-    <button class="modal__button-close close-button">
+    <button class="modal__button-close close-button" id="read-more-close">
       <svg class="modal__button-close__icon">
         <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
       </svg>
     </button>
     <h2 class="modal__title">How it’s made?</h2>
-    <div class="read-more-modal__video"></div>
+    <div class="read-more-modal__video">
+      <iframe
+        class="video-frame"
+        src="https://www.youtube.com/embed/bDDazMFfW2g?si=hqIGH89Can0-XtYW&"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <button class="play__button">
+        <svg class="play__button__icon">
+          <use href="/ice-cream/assets/symbol-defs-BdlVQMvU.svg#icon-play"></use>
+        </svg>
+      </button>
+    </div>
     <p class="read-more-modal__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et
     </p>
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" id="location-modal">
+  <div class="location-modal">
+    <button class="modal__button-close close-button">
+      <svg class="modal__button-close__icon">
+        <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Our Locations</h2>
+    <div class="location__map__thumb">
+      <iframe
+        class="location__map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13930.780402637803!2d-80.12661756618307!3d25.81497899360377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b367b8cc2ad9%3A0xe5fa8be013d65531!2s36th%20Street%20Park!5e0!3m2!1suk!2sua!4v1735605571441!5m2!1suk!2sua"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <a
+      class="location__button"
+      href="https://maps.app.goo.gl/H7nXNgQ6xDkyp7jo9"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Open map</a
+    >
   </div>
 </div>
 
