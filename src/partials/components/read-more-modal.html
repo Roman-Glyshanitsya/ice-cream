@@ -1,12 +1,27 @@
 <div class="backdrop is-hidden" id="read-more-modal">
   <div class="read-more-modal">
-    <button class="modal__button-close close-button">
+    <button class="modal__button-close close-button" id="read-more-close">
       <svg class="modal__button-close__icon">
         <use href="/img/icons/sprite.svg#icon-modal-close-btn"></use>
       </svg>
     </button>
     <h2 class="modal__title">How it’s made?</h2>
-    <div class="read-more-modal__video"></div>
+    <div class="read-more-modal__video">
+      <iframe
+        class="video-frame"
+        src="https://www.youtube.com/embed/bDDazMFfW2g?si=hqIGH89Can0-XtYW&"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <button class="play__button">
+        <svg class="play__button__icon">
+          <use href="/img/icons/symbol-defs.svg#icon-play"></use>
+        </svg>
+      </button>
+    </div>
     <p class="read-more-modal__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
