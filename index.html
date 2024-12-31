@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
     <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DRCuWMcR.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DTz32sJA.css">
   </head>
   <body>
     <header class="header">
@@ -47,7 +47,7 @@
           <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-burger-btn"></use>
         </svg>
       </button>
-      <button type="button" class="header__button">
+      <button type="button" class="header__button" data-modal="buy-now-modal">
         Buy now
         <svg class="header__button__icon">
           <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-arrow-right-bold"></use>
@@ -656,6 +656,18 @@
       rel="noopener noreferrer"
       >Open map</a
     >
+  </div>
+</div>
+
+    <div class="backdrop is-hidden" id="buy-now-modal">
+  <div class="buy-now-modal">
+    <button class="modal__button-close close-button">
+      <svg class="modal__button-close__icon">
+        <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Buy now</h2>
+    <ul class="buy-now-modal__list"></ul>
   </div>
 </div>
 
