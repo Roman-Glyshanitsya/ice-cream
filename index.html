@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/ice-cream/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ice-cream/assets/vendor-jOd-NI4E.js">
     <link rel="stylesheet" crossorigin href="/ice-cream/assets/vendor-wjhWB3DI.css">
-    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-DV9L2LMe.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream/assets/index-Bk94mP-f.css">
   </head>
   <body>
     <header class="header">
@@ -68,7 +68,7 @@
       <button
         type="button"
         class="hero__products__button"
-        data-modal="ingredients-modal"
+        data-modal="product-modal"
       >
         Products
       </button>
@@ -724,26 +724,84 @@
   </div>
 </div>
 
-    <div class="backdrop is-hidden" id="ingredients-modal">
-  <div class="ingredients-modal">
+    <div class="backdrop is-hidden" id="product-modal">
+  <div class="product-modal">
     <button class="modal__button-close close-button">
       <svg class="modal__button-close__icon">
         <use href="/ice-cream/assets/sprite-3YyLtUO9.svg#icon-modal-close-btn"></use>
       </svg>
     </button>
-    <h2 class="modal__title">Chololate icecream</h2>
+    <h2 class="modal__title product-modal__title">Chololate icecream</h2>
     <img
       srcset="/ice-cream/assets/ingredients-Lg8MReMv.png 1x, /ice-cream/assets/ingredients@2x-CWMqrPEn.png 2x"
       src="#"
       alt="ice cream"
-      class="ingredients-modal__img"
+      class="product-modal__img"
     />
-    <ul class="ingredients-modal__substance__list">
-      <li class="ingredients-modal__substance__item">
-        <p class="ingredients-modal__substance__number">320</p>
-        <p class="ingredients-modal__substance__text">kcal</p>
+    <ul class="product-modal__substance__list">
+      <li class="product-modal__substance__item">
+        <p class="product-modal__substance__number">320</p>
+        <p class="product-modal__substance__text">kcal</p>
+      </li>
+      <li class="product-modal__substance__item">
+        <p class="product-modal__substance__number">4g</p>
+        <p class="product-modal__substance__text">Prote...</p>
+      </li>
+      <li class="product-modal__substance__item">
+        <p class="product-modal__substance__number">8,2g</p>
+        <p class="product-modal__substance__text">Fats</p>
+      </li>
+      <li class="product-modal__substance__item">
+        <p class="product-modal__substance__number">40,4g</p>
+        <p class="product-modal__substance__text">Carbs</p>
       </li>
     </ul>
+    <h3 class="product-modal__subtitle">Ingredients</h3>
+    <ul class="product-modal__ingredients__list">
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Milk</p>
+        <p class="product-modal__ingredients__text">100ml</p>
+      </li>
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Belgian chocolate</p>
+        <p class="product-modal__ingredients__text">20g</p>
+      </li>
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Cream</p>
+        <p class="product-modal__ingredients__text">150 ml</p>
+      </li>
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Cocoa powder</p>
+        <p class="product-modal__ingredients__text">30g</p>
+      </li>
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Sugar</p>
+        <p class="product-modal__ingredients__text">40g</p>
+      </li>
+      <li class="product-modal__ingredients__item">
+        <p class="product-modal__ingredients__text">Vanilla sugar</p>
+        <p class="product-modal__ingredients__text">10g</p>
+      </li>
+    </ul>
+    <form class="buy-now-modal__from">
+      <input
+        type="text"
+        class="buy-now-modal__form__input"
+        placeholder="Name"
+      />
+      <input
+        type="tel"
+        class="buy-now-modal__form__input"
+        placeholder="Phone"
+      />
+      <textarea
+        class="buy-now-modal__form__textarea"
+        name="comment"
+        placeholder="Comment"
+        rows="4"
+      ></textarea>
+      <button class="buy-now-modal__button" type="submit">Submit</button>
+    </form>
   </div>
 </div>
 
