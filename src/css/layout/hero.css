@@ -34,7 +34,7 @@
     gap: 12px;
 }
 
-.hero__products__link {
+.hero__products__button {
     color: #000;
     text-align: center;
     font-size: 12px;
@@ -43,15 +43,16 @@
     border-radius: 8px;
     border: 2px solid #F8D24E;
     padding: 11px 26px;
+    background-color: transparent;
 
     transition: border var(--animation);
 }
 
-.hero__products__link:hover {
+.hero__products__button:hover {
     border: 2px solid #0A8817;
 }
 
-.hero__products__link:focus {
+.hero__products__button:focus {
     color: #FCFCFC;
     border: 2px solid #0A8817;
 }
