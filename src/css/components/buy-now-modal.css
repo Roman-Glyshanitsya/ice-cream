@@ -92,7 +92,7 @@
 .buy-now-modal__form__input::placeholder,
 .buy-now-modal__form__textarea::placeholder {
     color: #131313;
-    font-family: "Montserrat";
+    font-family: "Montserrat", serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 140%;
@@ -105,7 +105,7 @@
 .buy-now-modal__button {
     color: #131313;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", serif;
     font-size: 12px;
     font-weight: 600;
     border-radius: 10px;
