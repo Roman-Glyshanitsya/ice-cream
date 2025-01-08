@@ -18,6 +18,10 @@ button:hover {
   cursor: url('/img/icons/сursor.svg') 24 24, auto;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .modal__title {
   color: #131313;
   text-align: center;

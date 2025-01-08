@@ -4,8 +4,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-width: 280px;
-    min-height: 459px;
+    width: 280px;
+    height: 459px;
 
     border-radius: 10px;
     border: 2px solid #F8D24E;
@@ -55,8 +55,8 @@
 /* WIDTH 768 */
 @media screen and (min-width: 768px) {
     .read-more-modal {
-        min-width: 568px;
-        min-height: 449px;
+        width: 568px;
+        height: 449px;
         padding: 32px 60px;
     }
 
