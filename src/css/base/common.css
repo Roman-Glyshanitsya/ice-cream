@@ -13,10 +13,43 @@
   --animation: 350ms linear;
 }
 
-/* a:hover,
-button:hover {
-  cursor: url('/img/icons/сursor.svg') 24 24, auto;
-} */
+/* Задати ширину смуги прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  /* ширина для вертикальної прокрутки */
+  height: 8px;
+  /* висота для горизонтальної прокрутки */
+}
+
+/* Стилі для доріжки (фону) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* колір фону */
+  border-radius: 10px;
+  /* округлення */
+}
+
+/* Стилі для повзунка */
+::-webkit-scrollbar-thumb {
+  background: #F8D24E;
+  /* колір повзунка */
+  border-radius: 10px;
+  /* округлення */
+}
+
+/* Стилі для повзунка при ховері */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6c418;
+  /* змінений колір на ховер */
+}
+
+/* Стилі для всієї області прокрутки */
+body {
+  scrollbar-width: thin;
+  /* для Firefox: робить смугу тоншою */
+  scrollbar-color: #F8D24E #f0f0f0;
+  /* для Firefox: колір повзунка і фону */
+}
 
 html {
   scroll-behavior: smooth;

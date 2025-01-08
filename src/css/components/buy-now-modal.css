@@ -5,7 +5,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 280px;
-    height: 991px;
+    height: 90vh;
+    overflow-y: auto;
 
     border-radius: 10px;
     border: 2px solid #F8D24E;
